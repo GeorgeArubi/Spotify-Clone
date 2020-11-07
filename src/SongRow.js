@@ -9,20 +9,22 @@ function SongRow({ track }) {
                     <img className="songTitle__album" src={track.album.images[0].url} alt=""/>
                     <div className="songTitle__info">
                         <h1>{track.name}</h1>
-                        <p>
-                            {track.artists.map((artist) => artist.name)}
-                        </p>
+                        <p>{track.artists.map((artist) => artist.name)}</p>
                     </div>
                 </div>
              </div>
             <div className="column">
                 <div className="trackAlbum">
-                <p>{track.album.name}</p>
+                    <p>{track.album.name}</p>
                 </div>
             </div>
             <div className="column">
                 <div className="trackDuration">
-                    <p>{track.duration_ms}</p>
+                    <p>
+                    {Math.floor(track.duration_ms / 60000) + ":" + 
+                    (((track.duration_ms % 60000) / 1000).toFixed(0) < 10 ? '0' : '') + 
+                    ((track.duration_ms % 60000) / 1000).toFixed(0)}
+                    </p>
                 </div>
             </div>
         </div>
