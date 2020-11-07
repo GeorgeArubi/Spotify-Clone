@@ -1,0 +1,96 @@
+.body {
+    padding: 20px 30px 30px 30px;
+    flex: 1;
+    height: 770px;
+    color: #FFFFFF;
+    overflow-y: overlay;
+    background: linear-gradient(rgb(93, 94, 124), rgba(0, 0, 0, 1));
+}
+
+.body::-webkit-scrollbar {
+    display: block;
+    background-color: transparent;
+    width: 13px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: #5A5A5A;
+    position: absolute;
+}
+
+.body::-webkit-scrollbar-thumb:hover {
+    background-color: #898989;
+    transition: background-color .2s ease-in;
+}
+
+.body::-webkit-scrollbar-track {
+    margin-bottom: 30px;
+}
+
+.body__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.body_infoText {
+    flex: 1;
+}
+
+.body__info >img {
+    height: 22vh;
+    margin-right: 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infoText > h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -.04em;
+    text-transform: none;
+    font-weight: 700;
+}
+
+.body__infoText > h2 {
+    font-size: 14px;
+    margin-top: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.body__infoText > p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #C4C4C9;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.body__icons {
+    display: flex;
+    align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.body__playButton {
+    font-size: 66px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1DB954;
+}
+
+.body__playButton:hover {
+    transition: 0.1s transform ease-in;
+    transform: scale(1.08);
+}
+
+.body__songs {
+    margin: 20px -30px;
+}

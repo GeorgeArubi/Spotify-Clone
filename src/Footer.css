@@ -1,0 +1,108 @@
+.footer {
+    background-color: #282828;
+    border-top: 1px solid #000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    height: 50px;
+    width: 98%;
+    max-width: 1464px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.footer__left {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    max-width: 300px;
+}
+
+.footer__songInfo {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+}
+
+.footer__songInfo > h4 {
+    margin-bottom: 5px;
+}
+
+.footer__icon:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.footer__songInfo > p {
+    font-size: 12px;
+    color: #b3b3b3;
+    line-height: 16px;
+    letter-spacing: .015em;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer__albumLogo {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.footer__center {
+    flex: 0.5;
+    padding: 0 100px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer__right {
+    flex: 0.2;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    justify-content: flex-end;
+    flex-direction: row;
+    min-width: 180px;
+    -webkit-box-pack: end;
+}
+
+.footer__right * .MuiSlider-root {
+    color: #FFFFFF;
+    max-width: 100px;
+}
+
+.footer__right * .MuiSlider-root:hover {
+    color: #1DB954;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer__right * .MuiGrid-grid-xs-true {
+    max-width: 100px;
+}
+
+.MuiGrid-container {
+    position: relative;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.MuiGrid-spacing-xs-2 {
+    width: 0%;
+    margin: 0%;
+}

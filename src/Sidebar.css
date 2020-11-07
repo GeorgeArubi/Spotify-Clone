@@ -1,0 +1,56 @@
+.sidebar {
+    height: 770px;
+    color: #B3B3B3;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 232px;
+    min-width: 232px;
+    background-color: #040404;
+    display: flex; /* relevant part */
+    flex-direction: column; /* relevant part */
+    overflow: hidden; /* relevant part */
+}
+
+.sidebar > hr {
+    border: none;
+    height: 1.4px;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #282828;
+    display: block;
+}
+
+
+.sidebar_logo{
+    object-fit: contain;
+    margin-right: auto;
+    height: 65px;
+    padding: 10px;
+}
+
+.sidebar_title {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.sidebar_playlists {
+    max-height: 484px;
+    overflow-y: auto;
+}
+
+.sidebar_playlists::-webkit-scrollbar {
+    display: block;
+    background-color: transparent;
+    width: 13px;
+}
+
+.sidebar_playlists::-webkit-scrollbar-thumb {
+    background-color: #505050;
+}
+
+.sidebar_playlists::-webkit-scrollbar-track {
+    margin-bottom: 10px;
+}

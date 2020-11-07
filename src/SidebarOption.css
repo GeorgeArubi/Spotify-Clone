@@ -1,0 +1,28 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    color: #B3B3B3;
+    height: 40px;
+    cursor: pointer;
+    transition: 88ms color ease-in;
+    font-family: arial, sans-serif;
+    
+}
+
+.sidebarOption:hover{
+    color: white;
+}
+
+.sidebarOption_icon{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebarOption > p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
