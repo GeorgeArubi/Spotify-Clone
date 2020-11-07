@@ -1,33 +1,55 @@
-.songRow {
+.songColumn {
+    display: flex;
     margin-left: 20px;
     padding: 20px;
-    display: flex;
     align-items: center;
     z-index: 100;
     color: #FFFFFF;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+
+.songTitle {
+    display: flex;
     flex-direction: row;
 }
 
-.songRow:hover {
+.songColumn:hover {
     cursor: pointer;
     background-color: hsla(0,0%,100%,.1);
 }
 
-.songRow__info {
+.songTitle__info {
     margin-left: 20px;
 }
 
-.songRow__info > h1 {
+.songTitle__info > h1 {
     font-size: 16px;
 }
 
-.songRow__info > p {
+.songTitle__info > p {
     font-size: 14px;
     margin-top: 3px;
     color: #A1A1A1;
 }
 
-.songRow__album {
+.songTitle__album {
     height: 40px;
     width: 40px;
+}
+
+.trackAlbum > p {
+    font-size: 14px;
+    color: #A1A1A1;
+}
+
+.trackDuration > p {
+    font-size: 14px;
+    color: #A1A1A1;
 }
