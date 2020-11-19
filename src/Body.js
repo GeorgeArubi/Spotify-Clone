@@ -5,6 +5,7 @@ import Header from './Header.js';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import ScheduleOutlinedIcon from '@material-ui/icons/ScheduleOutlined';
 import SongRow from './SongRow.js';
 
 function Body({ spotify }) {
@@ -30,6 +31,18 @@ function Body({ spotify }) {
                     <MoreHorizIcon />
                 </div>
                 
+                <div className="body__headers">
+                    <div className="header_column">
+                        <p>TITLE</p>
+                    </div>
+                    <div className="header_column">
+                        <p>ALBUM</p>
+                    </div>
+                    <div className="header_column">
+                        <ScheduleOutlinedIcon className="header_duration"/>
+                    </div>
+                </div>
+                <hr />
                 {discover_weekly?.tracks.items.map(item =>
                     <SongRow track={item.track} />
                     )}

@@ -37,17 +37,20 @@
 }
 
 .body__info >img {
-    height: 22vh;
+    height: 25vh;
     margin-right: 20px;
     box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
 .body__infoText > h1 {
-    font-size: 48px;
+    font-size: 86px;
     line-height: 48px;
     letter-spacing: -.04em;
     text-transform: none;
     font-weight: 700;
+    margin-left: -5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .body__infoText > h2 {
@@ -64,6 +67,7 @@
     font-weight: 500;
     color: #C4C4C9;
     display: block;
+    padding-top: 15px;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -73,10 +77,48 @@
 .body__icons {
     display: flex;
     align-items: center;
+    margin-left: 30px;
 }
 
 .body__icons > .MuiSvgIcon-root {
     margin-right: 20px;
+}
+
+.body__headers {
+    display: flex;
+    margin-left: 20px;
+    padding: 0px 20px 5px 20px;
+    z-index: 100;
+    color: #FFFFFF;
+}
+
+.header_column {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.header_column > p {
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #B3B3B3;
+}
+
+.header_duration {
+    color: #B3B3B3;
+    align-items: right;
+}
+
+.body__songs > hr {
+    border: none;
+    height: 0.3px;
+    background-color: #B3B3B3;
+    display: block;
+    margin-left: 20px;
 }
 
 .body__playButton {
