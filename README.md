@@ -1,3 +1,3 @@
 # Spotify Clone
 
-![alt text](https://github.com/GeorgeArubi/Spotify-Clone/blob/master/demo/login.jpg?raw=true | width=100)
+<img src="https://github.com/GeorgeArubi/Spotify-Clone/blob/master/demo/login.jpg" alt="Login" width="250"/>
